@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
   <style>
+    /* ---------------------------------------- CSS Section ------------------------------------------*/
     :root {
       --navy: #14213D;
       --gold: #FCA311;
@@ -87,6 +89,7 @@
 
     .logo span {
       color: var(--gold);
+      font-size: 1.4em;
     }
 
     .navlinks {
@@ -124,7 +127,7 @@
       opacity: 1 !important;
     }
 
-    /* EYEBROW / SIGNATURE DEVICE */
+    /* -------------------------- EYEBROW / SIGNATURE DEVICE ------------------------------------*/
     .eyebrow {
       display: flex;
       align-items: center;
@@ -305,7 +308,15 @@
       text-align: right;
     }
 
-    /* WHAT I DO — ACCORDION CARDS (click opens a modal) */
+    #about p {
+      margin-bottom: 8px;
+    }
+
+    #about p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* --------- WHAT I DO — ACCORDION CARDS (click opens a modal) -------------- */
     .accordion {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -393,7 +404,7 @@
       display: none;
     }
 
-    /* placeholder state inside a panel */
+    /* --------------------placeholder state inside a panel -------------------------------- */
     .acc-empty {
       display: flex;
       align-items: center;
@@ -432,11 +443,9 @@
     .mini-gallery img,
     .mini-gallery video {
       width: 100%;
-      height: 220px;
-      object-fit: contain;
-      background: #FAFAFA;
-      padding: 14px;
-      box-sizing: border-box;
+      height: auto;
+      display: block;
+      background: #000;
     }
 
     .mini-gallery figcaption {
@@ -452,7 +461,7 @@
       line-height: 1.4;
     }
 
-    /* small section captions to separate Images / Video inside a panel */
+    /*---------------- small section captions to separate Images / Video inside a panel --------------*/
     .panel-subhead {
       font-size: 11px;
       font-weight: 800;
@@ -565,7 +574,7 @@
       color: #5a6480;
     }
 
-    /* PROJECT MODAL — click a card, this opens as a scrollable overlay */
+    /*---------- PROJECT MODAL — click a card, this opens as a scrollable overlay ---- */
     .modal-overlay {
       display: none;
       position: fixed;
@@ -668,7 +677,7 @@
       margin-top: 0;
     }
 
-    /* EXPERIENCE / EDUCATION TIMELINE */
+    /*----------------- EXPERIENCE / EDUCATION TIMELINE---------------------------- */
     .timeline-cols {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -875,7 +884,7 @@
 </head>
 
 <body>
-
+  <!-------------------------------- HTML Section ------------------------------->
   <header>
     <nav class="wrap">
       <div class="logo">Suliman<span>.</span></div>
@@ -893,7 +902,7 @@
     <div class="wrap">
       <div>
         <div class="eyebrow"><span class="chip"></span>Digital Marketing Associate</div>
-        <h1>Hi, I'm Suliman.<br>Turning ideas <span class="accent">into growth.</span></h1>
+        <h1>Hi, I'm Suliman.<br>Turning ideas into <span class="accent">growth.</span></h1>
         <p class="lead">Digital Marketing Associate based in Islamabad, Pakistan — blending marketing, design,
           technology and AI to turn ideas into real results.</p>
         <div class="cta-row">
@@ -913,9 +922,15 @@
       <div class="about-grid">
         <div>
           <div class="eyebrow"><span class="chip"></span>About</div>
-          <p>I’m Suliman, a Digital Marketing Associate working across digital marketing, creative design, content, and
-            brand presence. With a Software Engineering background, I combine creative thinking, technology, and AI to
-            create work that not only looks good, but is built to perform.
+          <p>Most marketing looks good and stops there. I build mine to perform.
+            I'm Suliman, a Digital Marketing Associate working across marketing, creative design, content, and brand
+            presence.
+
+          </p>
+          <p>
+            A background in Software Engineering shapes how I think, not just what looks good, but what
+            actually works. I blend creative instinct with technology and AI to build work that performs, not just
+            impresses.
           </p>
         </div>
         <div class="about-facts">
@@ -934,7 +949,8 @@
     <div class="wrap">
       <div class="section-head" id="work">
         <div class="eyebrow"><span class="chip"></span>What I Do</div>
-        <h2>Where marketing, design, and product understanding meet.</h2>
+        <h2>Six ways I help brands grow.
+        </h2>
         <p>Click any card to see the work behind it.</p>
       </div>
       <div class="accordion" id="whatIDo">
@@ -945,8 +961,8 @@
             <div class="icon-mark">DM</div>
             <div class="acc-head-text">
               <h3>Digital Marketing</h3>
-              <p>Brand presence and content strategy across Instagram, Facebook, and LinkedIn — plus
-                outreach and performance tracking.</p>
+              <p>Social media, SEO, content, and paid advertising, building brands through a complete digital marketing
+                strategy.</p>
             </div>
           </div>
           <div class="acc-panel">
@@ -962,7 +978,7 @@
             <div class="icon-mark">CS</div>
             <div class="acc-head-text">
               <h3>Creative & Social Media Design</h3>
-              <p>Social graphics and product presentation design.</p>
+              <p>Social graphics and product presentation design, crafted end-to-end from concept to final file.</p>
             </div>
           </div>
           <div class="acc-panel">
@@ -972,25 +988,25 @@
                 marketplace. Designed the brand identity, app UI, and launch campaign.</p>
               <div class="mini-gallery">
                 <figure>
-                  <img src="assets\design_images\eng_design_2.png" alt="EveForceKSA app home screen and brand intro">
+                  <img src="assets/design_images/eng_design_2.png" alt="EveForceKSA app home screen and brand intro">
                   <figcaption>
                     <h4>Coming soon / waitlist post</h4>
                   </figcaption>
                 </figure>
                 <figure>
-                  <img src="assets\design_images\website_live.png" alt="EveForceKSA coming soon waitlist post">
+                  <img src="assets/design_images/website_live.png" alt="EveForceKSA coming soon waitlist post">
                   <figcaption>
                     <h4>Website — responsive design</h4>
                   </figcaption>
                 </figure>
                 <figure>
-                  <img src="assets\design_images\eng_design_1.png" alt="EveForceKSA problem solution post">
+                  <img src="assets/design_images/eng_design_1.png" alt="EveForceKSA problem solution post">
                   <figcaption>
                     <h4>Home screen & brand intro </h4>
                   </figcaption>
                 </figure>
                 <figure>
-                  <img src="assets\design_images\eng_design_3.png" alt="EveForceKSA responsive website mockup">
+                  <img src="assets/design_images/eng_design_3.png" alt="EveForceKSA responsive website mockup">
                   <figcaption>
                     <h4>Problem / solution postApp</h4>
                   </figcaption>
@@ -1006,13 +1022,29 @@
             <div class="icon-mark">UX</div>
             <div class="acc-head-text">
               <h3>UI/UX Design</h3>
-              <p>Wireframes, user flows, and full interface design in Figma, built from real product
-                development experience.</p>
+              <p>Wireframes, prototypes, and complete interface design, grounded in real product development experience.
+              </p>
             </div>
           </div>
           <div class="acc-panel">
             <div class="acc-panel-inner">
-              <div class="acc-empty"><span class="dot"></span>Work samples coming soon.</div>
+              <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong style="color:var(--navy);">Web
+                  Landing Pages/Dhobi Online</strong> UI/UX design spanning web landing pages and a full mobile app,
+                built from wireframe through final interface.</p>
+              <div class="mini-gallery">
+                <figure>
+                  <img src="assets/uiux_Images/landing_pages.png" alt="describe what this screen shows">
+                  <figcaption>
+                    <h4>Web Landing Pages — HTML, CSS & JS</h4>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/uiux_Images/prototype.png" alt="describe what this screen shows">
+                  <figcaption>
+                    <h4>Dhobi Online — Complete App UI Flow</h4>
+                  </figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -1023,14 +1055,15 @@
             <div class="icon-mark">AI</div>
             <div class="acc-head-text">
               <h3>AI Content Creation</h3>
-              <p>AI-assisted image and video generation for brand and social content.</p>
+              <p>AI-generated imagery and video for brand and social content, created and directed from prompt to final
+                output.</p>
             </div>
           </div>
           <div class="acc-panel">
             <div class="acc-panel-inner">
               <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong style="color:var(--navy);">Vamonos
-                  Apparels</strong> — AI-generated product and
-                brand imagery used across ad creatives and social content.</p>
+                  Apparels Ltd</strong>— AI-generated product imagery and video, created and directed for ads and social
+                content.</p>
 
               <div class="panel-subhead">Images</div>
               <div class="mini-gallery">
@@ -1046,18 +1079,22 @@
                     <h4>Branded promo products — desk set</h4>
                   </figcaption>
                 </figure>
+                <!--
                 <figure>
                   <img src="assets/ai_images/ai-team-uniforms.jpg" alt="Vamonos Apparels team uniforms lineup">
                   <figcaption>
                     <h4>Team uniform lineup</h4>
                   </figcaption>
                 </figure>
+              -->
+                <!--
                 <figure>
                   <img src="assets/ai_images/ai-shelf-branding.jpg" alt="Vamonos Apparels branded shelf display">
                   <figcaption>
                     <h4>Branded shelf display</h4>
                   </figcaption>
                 </figure>
+              -->
               </div>
 
               <div class="panel-subhead" style="margin-top:28px;">Video</div>
@@ -1267,6 +1304,12 @@
           <div class="tl-item">
             <div class="dates">2017 – 2019</div>
             <h4>Intermediate, Computer Science</h4>
+            <div class="org">Army Public College, Attock Cantt</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="dates">2015 – 2017</div>
+            <h4>Secondary School, Computer Science</h4>
             <div class="org">Army Public College, Attock Cantt</div>
           </div>
         </div>
