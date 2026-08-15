@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suliman — Digital Marketing Associate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --navy: #14213D;
+      --gold: #FCA311;
+      --white: #FFFFFF;
+      --gray: #E5E5E5;
+      --black: #000000;
+      --ink: #1A1A2E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section,
+    footer {
+      scroll-margin-top: 90px;
+    }
+
+    #work {
+      scroll-margin-top: 100px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* NAV */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--gray);
+    }
+
+    nav.wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .navlinks a {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--navy);
+      opacity: 0.75;
+      transition: opacity .2s;
+    }
+
+    .navlinks a:hover {
+      opacity: 1;
+    }
+
+    .navcta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: 11px 24px;
+      border-radius: 100px;
+      font-weight: 800;
+      font-size: 14px;
+      opacity: 1 !important;
+      transition: transform .15s, background .15s;
+    }
+
+    .navcta:hover {
+      background: #e8930a;
+      transform: translateY(-2px);
+      opacity: 1 !important;
+    }
+
+    /* EYEBROW / SIGNATURE DEVICE */
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--navy);
+      opacity: 0.65;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow .chip {
+      width: 18px;
+      height: 18px;
+      background: var(--gold);
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 90px 0 100px;
+    }
+
+    .hero .wrap {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 .accent {
+      color: var(--gold);
+    }
+
+    .hero p.lead {
+      font-size: 18px;
+      color: #3d4a63;
+      max-width: 480px;
+      margin-bottom: 34px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 15px 28px;
+      border-radius: 100px;
+      font-weight: 800;
+      font-size: 15px;
+      display: inline-block;
+      transition: transform .15s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 2px solid var(--navy);
+      color: var(--navy);
+      padding: 13px 26px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 15px;
+      display: inline-block;
+      transition: all .15s;
+    }
+
+    .btn-secondary:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .hero-photo-frame {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      background: var(--gold);
+      aspect-ratio: 1/1.05;
+    }
+
+    .hero-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: var(--white);
+      padding: 10px 18px;
+      border-radius: 100px;
+      font-weight: 800;
+      font-size: 13px;
+      box-shadow: 0 8px 24px rgba(20, 33, 61, 0.18);
+    }
+
+    /* SECTION BASE */
+    section {
+      padding: 90px 0;
+    }
+
+    section.divider-top {
+      border-top: 1px solid var(--gray);
+    }
+
+    .section-head {
+      max-width: 640px;
+      margin-bottom: 52px;
+    }
+
+    .section-head h2 {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .section-head p {
+      color: #3d4a63;
+      font-size: 16px;
+      margin-top: 12px;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-grid p {
+      font-size: 17px;
+      color: #2c3550;
+      margin-bottom: 18px;
+    }
+
+    .about-facts {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-top: 1px solid var(--gray);
+    }
+
+    .fact {
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--gray);
+      font-size: 15px;
+    }
+
+    .fact .label {
+      color: #7a8299;
+      font-weight: 600;
+    }
+
+    .fact .value {
+      font-weight: 700;
+      text-align: right;
+    }
+
+    /* WHAT I DO — ACCORDION CARDS (click opens a modal) */
+    .accordion {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .acc-item {
+      border: 1px solid var(--gray);
+      border-radius: 18px;
+      background: var(--white);
+      transition: border-color .2s, background .2s, box-shadow .25s ease, transform .25s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .acc-item:hover {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px rgba(252, 163, 17, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .acc-head {
+      flex: 1;
+    }
+
+    .acc-head {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 26px 24px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .acc-head .icon-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--navy);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 15px;
+    }
+
+    .acc-head-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .acc-head-text h3 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .acc-head-text p {
+      font-size: 13.5px;
+      color: #5a6480;
+      line-height: 1.5;
+    }
+
+    .tag-building {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: #FFF4E0;
+      color: #B4740E;
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    /* the panel markup stays in the DOM as the source content for the modal, but is never shown inline */
+    .acc-panel {
+      display: none;
+    }
+
+    /* placeholder state inside a panel */
+    .acc-empty {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      background: #FAFAFA;
+      border-radius: 12px;
+      font-size: 14px;
+      color: #6a7390;
+    }
+
+    .acc-empty .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* gallery inside Creative & Social Media Design panel — every item same size, media fits without cropping */
+    .mini-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .mini-gallery figure {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--gray);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #FAFAFA;
+    }
+
+    .mini-gallery img,
+    .mini-gallery video {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #FAFAFA;
+      padding: 14px;
+      box-sizing: border-box;
+    }
+
+    .mini-gallery figcaption {
+      padding: 10px 14px 14px;
+      border-top: 1px solid var(--gray);
+      background: var(--white);
+    }
+
+    .mini-gallery figcaption h4 {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+
+    /* small section captions to separate Images / Video inside a panel */
+    .panel-subhead {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .mini-gallery-video {
+      grid-template-columns: 1fr;
+    }
+
+    .mini-gallery-video video {
+      height: auto;
+      max-height: 360px;
+      padding: 0;
+      background: #000;
+    }
+
+    /* INTERESTS & HOBBIES */
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .interest-card {
+      border: 1px solid var(--gray);
+      border-radius: 18px;
+      background: var(--white);
+      padding: 32px 24px;
+      text-align: center;
+      transition: border-color .2s, box-shadow .25s ease, transform .25s ease;
+    }
+
+    .interest-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px rgba(252, 163, 17, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .interest-card .interest-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 18px;
+      border-radius: 16px;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .interest-card .interest-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--gold);
+      fill: none;
+    }
+
+    .interest-card h3 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .interest-card p {
+      font-size: 13.5px;
+      color: #5a6480;
+      line-height: 1.6;
+    }
+
+    /* TECH CARDS */
+    .mini-tech-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .mini-tech-card {
+      border: 1px solid var(--gray);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .mini-tech-card .stack {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .mini-tech-card .stack span {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--gray);
+      color: var(--navy);
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    .mini-tech-card h4 {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .mini-tech-card p {
+      font-size: 13.5px;
+      color: #5a6480;
+    }
+
+    /* PROJECT MODAL — click a card, this opens as a scrollable overlay */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(20, 33, 61, 0.55);
+      backdrop-filter: blur(4px);
+      padding: 60px 20px;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.open {
+      display: block;
+    }
+
+    .modal-box {
+      background: var(--white);
+      max-width: 720px;
+      margin: 0 auto;
+      border-radius: 20px;
+      padding: 36px 32px 40px;
+      position: relative;
+      box-shadow: 0 30px 60px rgba(20, 33, 61, 0.35);
+      animation: modalIn .25s ease;
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--gray);
+      background: var(--white);
+      font-size: 20px;
+      line-height: 1;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .15s, border-color .15s;
+    }
+
+    .modal-close:hover {
+      background: var(--gray);
+      border-color: var(--gold);
+    }
+
+    .modal-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 22px;
+      padding-right: 40px;
+    }
+
+    .modal-head .icon-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--gold);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy);
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    .modal-head h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .modal-head p {
+      font-size: 14px;
+      color: #5a6480;
+    }
+
+    .modal-body .acc-panel-inner {
+      display: block;
+      padding: 0;
+      border-top: none;
+      margin-top: 0;
+    }
+
+    /* EXPERIENCE / EDUCATION TIMELINE */
+    .timeline-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px;
+    }
+
+    .timeline-col h3 {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .tl-item {
+      padding-left: 22px;
+      border-left: 2px solid var(--gray);
+      position: relative;
+      padding-bottom: 28px;
+    }
+
+    .tl-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 3px solid var(--white);
+      box-shadow: 0 0 0 1.5px var(--gold);
+    }
+
+    .tl-item .dates {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #8791AB;
+      margin-bottom: 4px;
+    }
+
+    .tl-item h4 {
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .tl-item .org {
+      font-size: 14px;
+      color: #5a6480;
+      margin-top: 2px;
+    }
+
+    .certificate-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      padding: 5px 12px;
+      border: 1.5px solid var(--gold);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.3;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .certificate-btn:hover {
+      background: var(--gold);
+      color: var(--navy);
+      transform: translateY(-1px);
+    }
+
+    .certificate-btn span {
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    /* CONTACT / FOOTER */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 80px 0 40px;
+    }
+
+    .contact-inner {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 60px;
+    }
+
+    .contact-inner h2 {
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-inner p {
+      color: #B9C2DE;
+      font-size: 17px;
+      margin-bottom: 32px;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      padding: 12px 24px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 14.5px;
+      transition: all .2s;
+    }
+
+    .contact-links a:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--navy);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 28px;
+      text-align: center;
+      font-size: 13px;
+      color: #7A84A8;
+    }
+
+    @media (max-width: 860px) {
+      .hero .wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 56px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .accordion {
+        grid-template-columns: 1fr;
+      }
+
+      .cs-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-cols {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .case-study {
+        padding: 32px 22px;
+      }
+
+      section {
+        padding: 56px 0;
+      }
+
+      .contact-inner h2 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width:520px) {
+      .grid-6 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="wrap">
+      <div class="logo">Suliman<span>.</span></div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#interests">Interests</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="navcta">Get in Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow"><span class="chip"></span>Digital Marketing Associate</div>
+        <h1>Hi, I'm Suliman.<br>Turning ideas <span class="accent">into growth.</span></h1>
+        <p class="lead">Digital Marketing Associate based in Islamabad, Pakistan — blending marketing, design,
+          technology and AI to turn ideas into real results.</p>
+        <div class="cta-row">
+          <a href="#work" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo-frame">
+        <img src="assets/hero_profile.png" alt="Suliman">
+        <div class="hero-badge">Digital Marketing Associate</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="divider-top">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <div class="eyebrow"><span class="chip"></span>About</div>
+          <p>I’m Suliman, a Digital Marketing Associate working across digital marketing, creative design, content, and
+            brand presence. With a Software Engineering background, I combine creative thinking, technology, and AI to
+            create work that not only looks good, but is built to perform.
+          </p>
+        </div>
+        <div class="about-facts">
+          <div class="fact"><span class="label">Based in</span><span class="value">Islamabad, Pakistan</span>
+          </div>
+          <div class="fact"><span class="label">Currently</span><span class="value">Digital Marketing
+              Associate</span></div>
+          <div class="fact"><span class="label">Education</span><span class="value">BS Software Engineering,
+              University of Gujrat</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider-top">
+    <div class="wrap">
+      <div class="section-head" id="work">
+        <div class="eyebrow"><span class="chip"></span>What I Do</div>
+        <h2>Where marketing, design, and product understanding meet.</h2>
+        <p>Click any card to see the work behind it.</p>
+      </div>
+      <div class="accordion" id="whatIDo">
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="openModal(this)" role="button" tabindex="0"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(this);}">
+            <div class="icon-mark">DM</div>
+            <div class="acc-head-text">
+              <h3>Digital Marketing</h3>
+              <p>Brand presence and content strategy across Instagram, Facebook, and LinkedIn — plus
+                outreach and performance tracking.</p>
+            </div>
+          </div>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-empty"><span class="dot"></span>Work samples coming soon.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="openModal(this)" role="button" tabindex="0"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(this);}">
+            <div class="icon-mark">CS</div>
+            <div class="acc-head-text">
+              <h3>Creative & Social Media Design</h3>
+              <p>Social graphics and product presentation design.</p>
+            </div>
+          </div>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong
+                  style="color:var(--navy);">EveForceKSA</strong> — Saudi Arabia's event talent
+                marketplace. Designed the brand identity, app UI, and launch campaign.</p>
+              <div class="mini-gallery">
+                <figure>
+                  <img src="assets\design_images\eng_design_2.png" alt="EveForceKSA app home screen and brand intro">
+                  <figcaption>
+                    <h4>Coming soon / waitlist post</h4>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets\design_images\website_live.png" alt="EveForceKSA coming soon waitlist post">
+                  <figcaption>
+                    <h4>Website — responsive design</h4>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets\design_images\eng_design_1.png" alt="EveForceKSA problem solution post">
+                  <figcaption>
+                    <h4>Home screen & brand intro </h4>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets\design_images\eng_design_3.png" alt="EveForceKSA responsive website mockup">
+                  <figcaption>
+                    <h4>Problem / solution postApp</h4>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="openModal(this)" role="button" tabindex="0"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(this);}">
+            <div class="icon-mark">UX</div>
+            <div class="acc-head-text">
+              <h3>UI/UX Design</h3>
+              <p>Wireframes, user flows, and full interface design in Figma, built from real product
+                development experience.</p>
+            </div>
+          </div>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-empty"><span class="dot"></span>Work samples coming soon.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="openModal(this)" role="button" tabindex="0"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(this);}">
+            <div class="icon-mark">AI</div>
+            <div class="acc-head-text">
+              <h3>AI Content Creation</h3>
+              <p>AI-assisted image and video generation for brand and social content.</p>
+            </div>
+          </div>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong style="color:var(--navy);">Vamonos
+                  Apparels</strong> — AI-generated product and
+                brand imagery used across ad creatives and social content.</p>
+
+              <div class="panel-subhead">Images</div>
+              <div class="mini-gallery">
+                <figure>
+                  <img src="assets/ai_images/ai-workwear-rack.jpg" alt="Vamonos Apparels workwear rack ad creative">
+                  <figcaption>
+                    <h4>Professional workwear for every industry</h4>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/ai_images/ai-brand-desk.jpg" alt="Vamonos Apparels branded desk items">
+                  <figcaption>
+                    <h4>Branded promo products — desk set</h4>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/ai_images/ai-team-uniforms.jpg" alt="Vamonos Apparels team uniforms lineup">
+                  <figcaption>
+                    <h4>Team uniform lineup</h4>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/ai_images/ai-shelf-branding.jpg" alt="Vamonos Apparels branded shelf display">
+                  <figcaption>
+                    <h4>Branded shelf display</h4>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="panel-subhead" style="margin-top:28px;">Video</div>
+              <div class="mini-gallery mini-gallery-video">
+                <figure>
+                  <video src="assets\ai_video\ai-content-video.mp4" controls playsinline preload="metadata"></video>
+                  <figcaption>
+                    <h4>AI-generated brand video</h4>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="openModal(this)" role="button" tabindex="0"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(this);}">
+            <div class="icon-mark">YT</div>
+            <div class="acc-head-text">
+              <h3>YouTube Automation</h3>
+              <p>A self-directed, part-time project exploring automated content production and channel
+                growth.</p>
+            </div>
+          </div>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-empty"><span class="dot"></span>Channel link coming soon.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="openModal(this)" role="button" tabindex="0"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(this);}">
+            <div class="icon-mark">&lt;/&gt;</div>
+            <div class="acc-head-text">
+              <h3>Technical Background</h3>
+              <p>Software engineering experience used to understand the products behind the marketing. Not
+                offered as a service.</p>
+            </div>
+          </div>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="mini-tech-grid">
+                <div class="mini-tech-card">
+                  <div class="stack"><span>Flutter</span><span>Firebase</span><span>Figma</span></div>
+                  <h4>Smart Bin — NEP-NICS</h4>
+                  <p>An IoT-based mobile app for real-time waste bin monitoring. Led development as
+                    CTO and designed the complete UI/UX in Figma.</p>
+                </div>
+                <div class="mini-tech-card">
+                  <div class="stack"><span>Flutter</span><span>Firebase</span><span>GitHub</span>
+                  </div>
+                  <h4>Dhobi Online — Final Year Project</h4>
+                  <p>A laundry service marketplace app connecting customers, providers, and delivery
+                    riders, with order management and real-time tracking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="interests" class="divider-top">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="chip"></span>Beyond Work</div>
+        <h2>Interests & Hobbies</h2>
+        <p>A few things that keep me inspired, grounded, and creative outside of marketing.</p>
+      </div>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-3 2.5V23l4.5-1.5L16 23v-1.5L13 19v-5.5l8 2.5z" />
+            </svg>
+          </div>
+          <h3>Traveling</h3>
+          <p>Exploring new places and cultures — every trip sharpens how I see and tell a brand's story.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+              <circle cx="12" cy="14" r="3.5" />
+            </svg>
+          </div>
+          <h3>Photography</h3>
+          <p>Capturing moments and composition — a habit that shapes my eye for visual content and design.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 13h18a9 6 0 0 1-9 6 9 6 0 0 1-9-6z" />
+              <path d="M7 13a5 7 0 0 1 10 0" />
+              <path d="M12 3v3" />
+              <path d="M8 4.5 9 6.5" />
+              <path d="M16 4.5 15 6.5" />
+            </svg>
+          </div>
+          <h3>Food & Cooking</h3>
+          <p>Cooking is my creative outlet — experimenting with flavors the same way I experiment with
+            campaigns.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v17H6.5A2.5 2.5 0 0 0 4 22.5z" />
+              <path d="M12 3h5.5A2.5 2.5 0 0 1 20 5.5v14a2.5 2.5 0 0 0-2.5-2.5H12" />
+            </svg>
+          </div>
+          <h3>Reading</h3>
+          <p>Novels and nonfiction alike fuel my curiosity and keep me thinking beyond the screen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="divider-top">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">
+          <span class="chip"></span>Background
+        </div>
+        <h2>Experience & Education</h2>
+      </div>
+
+      <div class="timeline-cols">
+
+        <!-------------------------------- Work Experience --------------------->
+        <div class="timeline-col">
+          <h3>Work Experience</h3>
+
+          <div class="tl-item">
+            <div class="dates">April 2026 – Present</div>
+            <h4>Digital Marketing Associate</h4>
+            <div class="org">Vamonos Apparels</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="dates">November 2024 – August 2025</div>
+            <h4>Digital Banking Technical Officer</h4>
+            <div class="org">
+              Ghazanfar Bank (promoted from Digital Banking Assistant)
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="dates">October 2023 – April 2024</div>
+            <h4>CTO / Lead Developer / UI-UX Designer</h4>
+            <div class="org">NEP-NICS</div>
+          </div>
+        </div>
+
+        <!-------------------------------- Courses & Certifications ------------------->
+        <div class="timeline-col">
+          <h3>Courses & Certifications</h3>
+
+          <div class="tl-item">
+            <div class="dates">2026</div>
+            <h4>Digital Marketing</h4>
+            <div class="org">HubSpot Academy</div>
+
+            <a href="assets\certificates\hubSpot_marketing.png" target="_blank" rel="noopener noreferrer"
+              class="certificate-btn">
+              <span>📄</span> Certificate
+            </a>
+          </div>
+
+          <div class="tl-item">
+            <div class="dates">2026</div>
+            <h4>Fundamentals of digital marketing</h4>
+            <div class="org">Google - Skillshop</div>
+
+            <a href="assets\certificates\digital_fundamental.PNG" target="_blank" rel="noopener noreferrer"
+              class="certificate-btn">
+              <span>📄</span> Certificate
+            </a>
+          </div>
+
+          <div class="tl-item">
+            <div class="dates">2026</div>
+            <h4>UI/UX & WEBFLOW </h4>
+            <div class="org">DigiSkills.pk</div>
+
+            <a href="assets\certificates\uiux.PNG" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+              <span>📄</span> Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-------------------------------- Education ---------------------->
+        <div class="timeline-col">
+          <h3>Education</h3>
+
+          <div class="tl-item">
+            <div class="dates">2020 – 2024</div>
+            <h4>BS, Software Engineering</h4>
+            <div class="org">University of Gujrat, Pakistan</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="dates">2017 – 2019</div>
+            <h4>Intermediate, Computer Science</h4>
+            <div class="org">Army Public College, Attock Cantt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="contact-inner">
+        <div class="eyebrow" style="justify-content:center; color:var(--gold); opacity:1;"><span
+            class="chip"></span>Connect</div>
+        <h2>Let's build something.</h2>
+        <p>Open to digital marketing and creative design roles, and freelance work.</p>
+        <div class="contact-links">
+          <a href="tel:+923359638702">+92 335 9638702</a>
+          <a href="mailto:sulimanofficial127@gmail.com">sulimanofficial127@gmail.com</a>
+          <a href="https://linkedin.com/in/suliman-85638a2b9" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        © 2026 Suliman. Digital Marketing Associate.
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this) closeModal();">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+      <div class="modal-head">
+        <div class="icon-mark" id="modalIcon"></div>
+        <div>
+          <h3 id="modalTitle"></h3>
+          <p id="modalSubtitle"></p>
+        </div>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(headEl) {
+      const item = headEl.closest('.acc-item');
+      document.getElementById('modalIcon').textContent = item.querySelector('.icon-mark').textContent;
+      document.getElementById('modalTitle').textContent = item.querySelector('.acc-head-text h3').textContent;
+      document.getElementById('modalSubtitle').textContent = item.querySelector('.acc-head-text p').textContent;
+      document.getElementById('modalBody').innerHTML = item.querySelector('.acc-panel').innerHTML;
+      const overlay = document.getElementById('modalOverlay');
+      overlay.classList.add('open');
+      overlay.scrollTop = 0;
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+
+</html>
