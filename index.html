@@ -173,6 +173,10 @@
       color: var(--gold);
     }
 
+    .contact-inner h2 .accent {
+      color: var(--gold);
+    }
+
     .hero p.lead {
       font-size: 18px;
       color: #3d4a63;
@@ -564,15 +568,6 @@
       border-radius: 100px;
     }
 
-    .mini-tech-card .stack span {
-      font-size: 11px;
-      font-weight: 700;
-      background: var(--gray);
-      color: var(--navy);
-      padding: 4px 10px;
-      border-radius: 100px;
-    }
-
     .stack {
       display: flex;
       gap: 6px;
@@ -587,8 +582,16 @@
       color: var(--navy);
       padding: 4px 10px;
       border-radius: 100px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
     }
 
+    .stack span img {
+      width: 14px;
+      height: 14px;
+      object-fit: contain;
+    }
 
     .mini-tech-card h4 {
       font-size: 15px;
@@ -996,6 +999,14 @@
             <div class="acc-panel-inner">
               <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong style="color:var(--navy);">Digital
                   Marketing</strong> — social media management, content strategy, and outreach for Vamonos Apparels.</p>
+              <div class="panel-subhead">Tools Used</div>
+
+              <div class="stack">
+                <span><img src="assets/icons/meta.png" alt="Meta">Meta Ads Manager</span>
+                <span><img src="assets/icons/google.png" alt="Google">Google Analytics</span>
+                <span>10+ AI Tools</span>
+
+              </div>
               <div class="mini-gallery">
                 <figure>
                   <img src="assets/design_images/YOUR_IMAGE_1.png" alt="">
@@ -1028,6 +1039,14 @@
               <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong
                   style="color:var(--navy);">EveForceKSA</strong> — Saudi Arabia's event talent
                 marketplace. Designed the brand identity, app UI, and launch campaign.</p>
+              <div class="panel-subhead">Tools Used</div>
+
+              <div class="stack">
+                <span><img src="assets/icons/figma.png" alt="Figma">Figma</span>
+                <span><img src="assets/icons/canva.png" alt="Canva">Canva</span>
+                <span><img src="assets/icons/ai.png" alt="AI">AI</span>
+
+              </div>
               <div class="mini-gallery">
                 <figure>
                   <img src="assets/design_images/eng_design_2.png" alt="EveForceKSA app home screen and brand intro">
@@ -1050,7 +1069,7 @@
                 <figure>
                   <img src="assets/design_images/eng_design_3.png" alt="EveForceKSA responsive website mockup">
                   <figcaption>
-                    <h4>Problem / solution postApp</h4>
+                    <h4>Problem / solution post</h4>
                   </figcaption>
                 </figure>
               </div>
@@ -1073,15 +1092,22 @@
               <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong style="color:var(--navy);">Web
                   Landing Pages/Dhobi Online</strong>— UI/UX design spanning web landing pages and a full mobile app,
                 built from wireframe through final interface.</p>
+              <div class="panel-subhead">Tools Used</div>
+
+              <div class="stack">
+                <span><img src="assets/icons/figma.png" alt="Figma">Figma</span>
+                <span><img src="assets/icons/vs_code.png" alt="VS Code">VS Code</span>
+                <span><img src="assets/icons/github.png" alt="GitHub">GitHub</span>
+              </div>
               <div class="mini-gallery">
                 <figure>
-                  <img src="assets/uiux_Images/landing_pages.png" alt="describe what this screen shows">
+                  <img src="assets/uiux_Images/landing_pages.png" alt="Responsive website landing page designs">
                   <figcaption>
                     <h4>Web Landing Pages — HTML, CSS & JS</h4>
                   </figcaption>
                 </figure>
                 <figure>
-                  <img src="assets/uiux_Images/prototype.png" alt="describe what this screen shows">
+                  <img src="assets/uiux_Images/prototype.png" alt="Dhobi Online mobile app UI and user flow">
                   <figcaption>
                     <h4>Dhobi Online — Complete App UI Flow</h4>
                   </figcaption>
@@ -1106,7 +1132,15 @@
               <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong style="color:var(--navy);">Vamonos
                   Apparels Ltd</strong>— AI-generated product imagery and video, created and directed for ads and social
                 content.</p>
+              <div class="panel-subhead">Tools Used</div>
 
+              <div class="stack">
+                <span><img src="assets/icons/chatgpt.png" alt="ChatGPT">ChatGPT</span>
+                <span><img src="assets/icons/claude.png" alt="Claude">Claude</span>
+                <span><img src="assets/icons/capcut.png" alt="CapCut">CapCut</span>
+                <span>10+ AI Tools</span>
+
+              </div>
               <div class="panel-subhead">Images</div>
               <div class="mini-gallery">
                 <figure>
@@ -1142,7 +1176,7 @@
               <div class="panel-subhead" style="margin-top:28px;">Video</div>
               <div class="mini-gallery mini-gallery-video">
                 <figure>
-                  <video src="assets\ai_video\ai-content-video.mp4" controls playsinline preload="metadata"></video>
+                  <video src="assets/ai_video/ai-content-video.mp4" controls playsinline preload="metadata"></video>
                   <figcaption>
                     <h4>AI-generated brand video</h4>
                   </figcaption>
@@ -1167,17 +1201,25 @@
               <p style="font-size:14.5px; color:#5a6480; margin-bottom:20px;"><strong style="color:var(--navy);">Rise
                   From Dust</strong> — a YouTube channel sharing real survival and endurance stories through
                 narration-driven video.</p>
+              <div class="panel-subhead">Tools Used</div>
+
+              <div class="stack">
+                <span><img src="assets/icons/claude.png" alt="Claude">Claude</span>
+                <span><img src="assets/icons/elevenlabs.png" alt="ElevenLabs">ElevenLabs</span>
+                <span><img src="assets/icons/leonardo.png" alt="Leonardo">Leonardo</span>
+                <span><img src="assets/icons/capcut.png" alt="CapCut">CapCut</span>
+              </div>
               <div class="mini-gallery">
                 <figure>
-                  <img src="assets/youtube/yt_image1.png" alt="describe what this screen shows">
+                  <img src="assets/youtube/yt_image1.png" alt="YouTube Video Thumbnail">
                   <figcaption>
-                    <h4>Screen or Prototype Name</h4>
+                    <h4>YouTube video thumbnail</h4>
                   </figcaption>
                 </figure>
                 <figure>
-                  <img src="assets/youtube/yt_image2.png" alt="describe what this screen shows">
+                  <img src="assets/youtube/yt_image2.png" alt="YouTube Video Thumbnail">
                   <figcaption>
-                    <h4>Screen or Prototype Name</h4>
+                    <h4>YouTube video thumbnail</h4>
                   </figcaption>
                 </figure>
               </div>
@@ -1230,7 +1272,7 @@
       <div class="section-head">
         <div class="eyebrow"><span class="chip"></span>Beyond Work</div>
         <h2>Interests & Hobbies</h2>
-        <p>A few things that keep me inspired, grounded, and creative outside of marketing.</p>
+        <p>A few things that keep me curious, inspired, and grounded.</p>
       </div>
       <div class="interests-grid">
         <div class="interest-card">
@@ -1241,7 +1283,7 @@
             </svg>
           </div>
           <h3>Traveling</h3>
-          <p>Exploring new places and cultures — every trip sharpens how I see and tell a brand's story.</p>
+          <p>Exploring new places, cultures, and perspectives that continually shape how I think and see the world.</p>
         </div>
         <div class="interest-card">
           <div class="interest-icon">
@@ -1251,7 +1293,8 @@
             </svg>
           </div>
           <h3>Photography</h3>
-          <p>Capturing moments and composition — a habit that shapes my eye for visual content and design.</p>
+          <p>Capturing nature, light, landscapes, and quiet moments that often go unnoticed.
+          </p>
         </div>
         <div class="interest-card">
           <div class="interest-icon">
@@ -1264,8 +1307,7 @@
             </svg>
           </div>
           <h3>Food & Cooking</h3>
-          <p>Cooking is my creative outlet — experimenting with flavors the same way I experiment with
-            campaigns.</p>
+          <p>Experimenting with flavors and discovering creativity through food and cooking.</p>
         </div>
         <div class="interest-card">
           <div class="interest-icon">
@@ -1275,7 +1317,7 @@
             </svg>
           </div>
           <h3>Reading</h3>
-          <p>Novels and nonfiction alike fuel my curiosity and keep me thinking beyond the screen.</p>
+          <p>Exploring stories and ideas that fuel my curiosity and expand my perspective.</p>
         </div>
       </div>
     </div>
@@ -1326,7 +1368,7 @@
             <h4>Digital Marketing</h4>
             <div class="org">HubSpot Academy</div>
 
-            <a href="assets\certificates\hubSpot_marketing.png" target="_blank" rel="noopener noreferrer"
+            <a href="assets/certificates/hubSpot_marketing.png" target="_blank" rel="noopener noreferrer"
               class="certificate-btn">
               <span>📄</span> Certificate
             </a>
@@ -1337,7 +1379,7 @@
             <h4>Fundamentals of digital marketing</h4>
             <div class="org">Google - Skillshop</div>
 
-            <a href="assets\certificates\digital_fundamental.PNG" target="_blank" rel="noopener noreferrer"
+            <a href="assets/certificates/digital_fundamental.PNG" target="_blank" rel="noopener noreferrer"
               class="certificate-btn">
               <span>📄</span> Certificate
             </a>
@@ -1348,7 +1390,7 @@
             <h4>UI/UX & WEBFLOW </h4>
             <div class="org">DigiSkills.pk</div>
 
-            <a href="assets\certificates\uiux.PNG" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+            <a href="assets/certificates/uiux.PNG" target="_blank" rel="noopener noreferrer" class="certificate-btn">
               <span>📄</span> Certificate
             </a>
           </div>
@@ -1385,12 +1427,17 @@
       <div class="contact-inner">
         <div class="eyebrow" style="justify-content:center; color:var(--gold); opacity:1;"><span
             class="chip"></span>Connect</div>
-        <h2>Let's build something.</h2>
+        <h2>Let's build <span class="accent">something.</span></h2>
         <p>Open to digital marketing and creative design roles, and freelance work.</p>
         <div class="contact-links">
-          <a href="tel:+923359638702">+92 335 9638702</a>
-          <a href="mailto:sulimanofficial127@gmail.com">sulimanofficial127@gmail.com</a>
-          <a href="https://linkedin.com/in/suliman-85638a2b9" target="_blank">LinkedIn</a>
+          <a href="https://wa.me/message/TPI5T4V4FFATN1" target="_blank" rel="noopener noreferrer">
+            +92 335 9638702
+          </a><a href="https://mail.google.com/mail/?view=cm&fs=1&to=sulimanofficial127@gmail.com" target="_blank">
+            sulimanofficial127@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/suliman-85638a2b9" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
         </div>
       </div>
       <div class="wrap footer-bottom">
